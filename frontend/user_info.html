@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- location -->
+            <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+            <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgWYA-QpQyXPB8IySO_N56RiTIrwaKiWo&callback=initMap&libraries=places&v=weekly"
+            defer
+            ></script>
+ 
+        <!-- Api gateway -->
+        <script src="./sdk/lib/axios/dist/axios.standalone.js"></script>
+        <script src="./sdk/lib/CryptoJS/rollups/hmac-sha256.js"></script>
+        <script src="./sdk/lib/CryptoJS/rollups/sha256.js"></script>
+        <script src="./sdk/lib/CryptoJS/components/hmac.js"></script>
+        <script src="./sdk/lib/CryptoJS/components/enc-base64.js"></script>
+        <script src="./sdk/lib/url-template/url-template.js"></script>
+        <script src="./sdk/lib/apiGatewayCore/sigV4Client.js"></script>
+        <script src="./sdk/lib/apiGatewayCore/apiGatewayClient.js"></script>
+        <script src="./sdk/lib/apiGatewayCore/simpleHttpClient.js"></script>
+        <script src="./sdk/lib/apiGatewayCore/utils.js"></script>  
+        <script src="./sdk/apigClient.js"></script> 
+
+        <!-- Jquery -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>  
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <!-- My script and stylesheet -->
+        <script src="user_info.js"></script>
+        <link rel="stylesheet" href="user_info.css">
+
+    </head>
+    <body>
+        <div class = "container">
+            <div class="heading"> ENTER USER PROFILE INFORMATION </div>
+            <br>
+            <div id="error" class="error"></div>
+            <input type="text" id="username" placeholder="enter username" readonly>
+            <br>
+            <input type="text" id="name" placeholder="enter name">
+            <br>
+            <input type="email" id="email" placeholder="enter email" readonly>
+            <br>
+            <input type="textarea" id="bio" placeholder="enter bio">
+            <br>
+            <input id="autocomplete" placeholder="Enter your preferred city" type="text" />
+             <!-- <div id="controls">
+              <select id="country">
+                <option value="all">All</option>
+                <option value="ca">Canada</option>
+                <option value="us" selected>U.S.A.</option>
+              </select>
+            </div> -->
+            <div id="listing">
+                <table id="resultsTable">
+                  <tbody id="results"></tbody>
+                </table>
+            </div>
+            <br>
+            <label for="categories">Select your interests</label>
+            <br>
+            <select id="categories" multiple="multiple" class="dropdown">
+                <option value="Sports">Sports</option>
+                <option value="Film">Film</option>
+                <option value="Music">Music</option>
+                <option value="Transportation">Touristic</option>
+                <option value="Group">Group Activities</option>
+                <option value="Individual">Solo Activities</option>
+                <option value="Family">Family</option>
+                <option value="Food & Drink">Food & Drinks</option>
+                <option value="Arts & Theatre">Arts & Theatre</option>
+            </select>
+            <br>
+            <br>
+            <label for="categories"> Upload your Profile Picture </label>
+            <br>
+            <input type="file" id="dp">
+            <br>
+            <br>
+            <div class = "note">
+                NOTE: You will receive an email invitation to verify your address. Kindly click on the link in the email to verify your email.
+            </div>
+            <br>
+            <br>
+            <button type="submit" id="search" onclick="submitUserData()"> SUBMIT </button>
+        </div>
+    </body>
+</html>

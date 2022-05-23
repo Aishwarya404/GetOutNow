@@ -1,0 +1,124 @@
+i {
+    font-size: 40px !important;
+    color: #8265a7;
+    margin-right: 38px;
+    margin-left: 12px;
+}
+
+.navbar-nav {
+    /* background-color: #2A1B3D; */
+    background-image: url("./purp.jpeg");
+    padding-top: 30px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    position: fixed; 
+    top: 0;
+    width: 100%; 
+    z-index: 100;
+}
+
+.icon:hover{
+    cursor: pointer;
+}
+
+#logout {
+    margin-right: 0px !important;
+    float: right;
+    padding-right: 0px !important
+}
+
+body {
+    /* background-color: #2A1B3D !important; */
+    background-image: url("./purp.jpeg");
+    color: #a4b3b6 !important;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ----------------------------------  SEARCH BAR ------------------------------- */
+
+
+.main-text {
+    color: #a4b3b6;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#search-block {
+    padding: 0px;
+    background: none !important;
+    text-align: center;
+}
+
+input {
+    width: 800px;
+    height: 50px;
+}
+
+.go {
+    font-size: 22px !important;
+    font-weight: 500;
+    text-align: center;
+    color: #D83F87;
+}
+
+button {
+    background-color: white;
+    font-weight: 500;
+    height: 49px;
+    width: 50px;
+    margin-left: -4px !important;
+    border: none !important;
+    margin-top: 5px !important;
+}
+
+/* ------------------------------------------------------------ */
+
+#display-block {
+    padding: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.event, .friend {
+    background-color: #8265a7;
+    margin-right: 40px;
+    padding: 15px;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+}
+
+.event-name, .friend-name {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+img {
+    height: 230px;
+    width: 100%;
+}
+
+.icon:hover{
+    cursor: pointer;
+}
+
+.pagination_section {
+    float: right;
+    margin-top: 20px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+} 
+
+.page {
+    background-color: #D83F87 !important;
+}
+ 
+.pagination_section a:hover:not(.active) {
+    background-color: #031F3B;
+    color: white;
+}

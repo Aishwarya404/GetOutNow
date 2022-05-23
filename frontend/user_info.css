@@ -1,0 +1,57 @@
+.heading {
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input, button, select {
+    margin: 15px;
+    width: 500px !important;
+    height: 40px;
+}
+
+.container {
+    margin: auto;
+    margin-top: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    text-align: center;
+    width: 800px;
+}
+
+.note {
+    color: #8265a7;
+    font-size: 18px;
+}
+
+#bio {
+    height: 100px;
+}
+
+body {
+    background-color: #2A1B3D !important;
+    color: #a4b3b6 !important;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dropdown{
+    height: 100px;
+}
+
+#search {
+    background-color: #D83F87;
+    font-weight: 600;
+}
+
+#dp {
+    margin-left: 250px;
+}
+
+label {
+    font-size: 20px;
+}
+
+.error{
+    color:red;
+}
